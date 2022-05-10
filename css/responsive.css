@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    /* height: 478px; */
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.logo img {
+    width: 100%;
+    /* border: 3px solid whitesmoke;
+    border-radius: 80px; */
+}
+
+.nav-list {
+    width: 70%;
+    /* background-color: violet; */
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 26px 30px;
+    padding-left: 30px;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.nav-list li a:hover {
+    text-decoration: none;
+    color: rgb(128, 123, 123);
+}
+
+.rightnav {
+    width: 30%;
+    text-align: right;
+    /* background-color: aliceblue; */
+    padding: 0 23px;
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7)url(../image/bg4.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstsection {
+    height: 100vh;
+}
+
+/* .secondhalf img {
+    width: 120%;
+} */
+
+.boxmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 80%;
+    margin: auto;
+    height: 85%;
+    justify-content: center;
+}
+
+/* .firsthalf{
+    margin-top: 0;
+} */
+.textbig {
+    font-size: 75px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.textsmall {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.firsthalf {
+    margin-top: 0;
+}
+
+.contactform {
+    font-family: 'Ubuntu', sans-serif;
+    background: rgba(0, 0, 0, 0.7) url(/image/bg4.jpg);
+    color: white;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 125vh;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 34px;
+
+}
+
+.contactform h2 {
+    font-size: 100px;
+    padding: 10px 10px;
+}
+
+.contactform h3 {
+    font-size: 40px;
+}
+
+.contactform div {
+    padding: 8px;
+}
+
+.btn {
+    padding: 8px 20px;
+    margin: 7px 5px;
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+    font-size: 18px;
+    color: aliceblue;
+    font-family: 'Ubuntu', sans-serif;
+    justify-content: center;
+    position: relative;
+    background: none;
+    text-align: center;
+}
+
+.btn:hover {
+    color: darkgray;
+    background-color: rgb(64, 59, 82);
+    cursor: pointer;
+}
+
+.form-control {
+    height: 33px;
+    width: 25%;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    border: 2px solid whitesmoke;
+    border-radius: 13px;
+    font-size: 20px;
+
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1010px) {
+    .nav-list {
+        flex-direction: column;
+
+    }
+
+    .navbar {
+        flex-direction: column;
+        transform: all 0.3s ease-out;
+    }
+
+    .rightnav {
+        text-align: center;
+        /* height: 478px; */
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .h-nav-resp {
+        height: 72px;
+
+    }
+
+    .v-class-resp {
+        opacity: 0;
+    }
+
+    .h-nav-resp {
+        height: 72px;
+    }
+
+    .textsmall {
+        text-align: center;
+    }
+
+    .textbig {
+        text-align: center;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .paras {
+        padding: 0px 0px;
+    }
+    .contactform {
+        font-family: 'Ubuntu', sans-serif;
+        background: rgba(0, 0, 0, 0.7) url(/image/bg4.jpg);
+        color: white;
+        background-size: cover;
+        background-blend-mode: darken;
+        height: 100%;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 24px;
+    
+    }
+    .contactform h2 {
+        font-size: 70px;
+        padding: 10px 10px;
+    }
+    
+    .contactform h3 {
+        font-size: 25px;
+    }
+}
